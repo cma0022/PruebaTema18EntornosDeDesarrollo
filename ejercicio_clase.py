@@ -1,3 +1,5 @@
+import math
+
 # Creamos la clase
 class circulo:
 
@@ -8,10 +10,15 @@ class circulo:
     def __init__(self, radio:float) -> None:
         self._radio = radio
 
-    # Método que no hace nada(por ahora)
-    def area(self):
-        pass
 
-    # Método que no hace nada(por ahora)
+    # Método que calcula el área
+    def area(self):
+        resultado = math.pi*math.pow(self._radio,2)
+        return resultado
+        
+    
+
+    # Método que calcular la circunferencia
     def circunferencia(self):
-        pass
+        resultado = math.pi*2*self._radio
+        return resultado
